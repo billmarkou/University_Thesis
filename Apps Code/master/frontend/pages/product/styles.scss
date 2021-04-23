@@ -1,0 +1,43 @@
+.main_layout {
+  display: flex;
+
+  box-shadow: 0 0 5px rgba(0,0,0,.16);
+
+  margin-top: 20px;
+}
+
+.layout_col {
+  flex: 1;
+}
+
+.layout_left {
+  width: 300px;
+} 
+
+.title {
+  font-weight: bold;
+  font-size: 26px;
+  color: #000;
+}
+
+.description{
+   padding-top: 15px;
+} 
+
+.price {
+  font-size: 26px;
+  font-weight: bold;
+  color: #000;
+}
+
+.order_button {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}

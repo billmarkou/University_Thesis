@@ -1,0 +1,45 @@
+.banner {
+  height: 500px;
+  width: 100%;
+  background-color: #7fbaf9;
+  background: url('/static/images/banners/index.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.banner_content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  align-items: center;
+
+  text-align: left;
+
+}
+
+.banner_title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.banner_description {
+  font-size: 18px;
+}
+
+.featured_title {
+  font-size: 22px;
+  font-weight: bold;
+
+  text-align: center;
+}
+
+.featured {
+  display: flex;
+  flex-wrap:wrap;
+}

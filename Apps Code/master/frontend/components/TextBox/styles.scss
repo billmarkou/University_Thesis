@@ -1,0 +1,19 @@
+.tb {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 16px;
+  border: none;
+  border: 0;
+  border: 1px solid #aaa;
+  background-color: #fff;
+  border-radius: 5px;
+  outline: none;
+  padding: 5px;
+  box-sizing: border-box;
+  
+  width: 100%;
+
+  &:focus {
+    box-shadow: 0 0 5px rgba(#000, .3);
+  }
+}
+ 

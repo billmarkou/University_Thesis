@@ -1,0 +1,45 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.12.10",
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-sass": "^1.0.1",
+    "express": "^4.17.1",
+    "form-data": "^3.0.0",
+    "isomorphic-cookie": "^1.2.4",
+    "isomorphic-unfetch": "^3.1.0",
+    "jquery": "^3.5.1",
+    "js-cookie": "^2.2.1",
+    "lodash": "^4.17.20",
+    "moment": "^2.29.1",
+    "next": "^10.0.4",
+    "next-compose-plugins": "^2.2.1",
+    "next-plugin-transpile-modules": "^2.0.0",
+    "node-sass": "^4.14.1",
+    "react": "^16.14.0",
+    "react-date-picker": "^8.0.5",
+    "react-dom": "^16.14.0",
+    "react-feather": "^2.0.9",
+    "react-numeric-input": "^2.2.3",
+    "react-select": "^3.1.1",
+    "short-hash": "^1.0.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-proposal-object-rest-spread": "^7.12.1",
+    "@babel/plugin-proposal-optional-chaining": "^7.12.7",
+    "http-proxy-middleware": "^1.0.6"
+  }
+}

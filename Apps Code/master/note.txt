@@ -1,0 +1,9 @@
+// install pipenv
+pip install --user pipenv
+
+//Install python packages
+pipenv install -r requirements.txt
+
+npm run dev (at frontend)
+
+sudo docker run -it -v mongodata:/data/db --name mongodb -d mongo -p 27017:27017

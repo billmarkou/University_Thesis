@@ -1,0 +1,12 @@
+.wrapper {
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+.input {
+  position: absolute;
+  z-index: -1000;
+  opacity: 0;
+  user-select: none;
+}

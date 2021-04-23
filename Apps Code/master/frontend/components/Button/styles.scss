@@ -1,0 +1,34 @@
+.wrapper {
+   
+}
+
+.button {
+  border: none;
+  background-color: #aaa;
+  font-size: 15px;
+  color: #020202;
+  outline: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+
+
+  cursor: pointer;
+
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+
+  transition: background-color .5s ease; 
+  &:hover {
+    background-color: #7e96a7;  
+    transition: background-color .5s ease; 
+  }
+
+  &:active { 
+    background-color: #617c8f;   
+    transition: background-color 0s ease; 
+  }
+
+}
+ 
+ 

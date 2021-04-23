@@ -1,0 +1,10 @@
+{% extends "admin/index.html" %}
+ 
+{% block content%}   
+ 
+  {% if request.user.is_superuser %}   
+
+    
+  {% endif %}
+  {{ block.super }}
+{% endblock %}

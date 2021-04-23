@@ -1,0 +1,16 @@
+{% extends 'admin/change_form.html' %}
+
+{% block after_field_sets %}
+{{ block.super }}
+    {%if show_approve %}
+        <div class="submit-row" style="float:right"> 
+            <input type="submit" value="Approve" class="default" name="_approve-order"> 
+        </div>
+    {% endif %}
+
+    {%if show_close %}
+        <div class="submit-row" style="float:right"> 
+            <input type="submit" value="Close" class="default" name="_close-order"> 
+        </div>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,80 @@
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows:repeat(6/1fr);
+  grid-gap: 15px;
+  border-radius: 8px;
+  border-style: groove;
+  background-color: #c5d28170;
+  box-shadow: 0 0 5px rgba(#000, 0.3);
+  grid-template-areas: 
+    "c c c c"
+    "t t s s"
+    "ds ds de de"
+    "pId pId eId eId"
+    "p p p p"
+    "0 0 0 b";
+  
+}
+
+.code{
+  grid-area: c;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.type{
+  grid-area: t;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.state{
+  grid-area: s;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.dateS{
+  grid-area: ds;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.dateE{
+  grid-area: de;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.prod{
+  grid-area: p;
+  display: flex;
+  flex-direction: row;
+}
+
+.pId{
+  grid-area: pId;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.eId{
+  grid-area: eId;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.b{
+  grid-area: b;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+}

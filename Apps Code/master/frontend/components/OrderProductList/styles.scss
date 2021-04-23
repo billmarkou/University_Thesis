@@ -1,0 +1,36 @@
+.list {
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.list_item {
+
+
+
+  display: flex; 
+  flex-direction: row;
+  border-bottom: 1px solid black;
+  
+
+  & > * {
+    flex: 1;
+    margin:5px;
+
+    &::before {
+      content: " " attr(label) "";
+      display: block;
+
+    } 
+  }
+}
+
+.remove_button {
+  flex: .1;
+}
+
+.intField{
+  width:20px
+}

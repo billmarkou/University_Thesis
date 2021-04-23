@@ -1,0 +1,20 @@
+@import "../../core/mixins/all.scss";
+
+$sidebar-size: 250px;
+ 
+.sidebar {
+  position: fixed;
+  @include bounds(0, initial, 0, 0); 
+  width: $sidebar-size;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: $sidebar-size;
+  padding: 16px;
+  max-height: 700px;
+}
+
+a { color: inherit; } 

@@ -1,0 +1,49 @@
+version: '3.3'
+services: 
+
+  nginx:
+    container_name: nginx-container
+    restart: always 
+    build: 
+      context: .
+      dockerfile: ./Dockerfile-Nginx
+    ports:
+      - '80:80' 
+    depends_on: 
+      - frontend 
+    volumes:
+      - ./.v/media:/media 
+      # - ./.v/static:/static 
+    links:
+      - frontend 
+      - backend 
+ 
+  frontend:
+    container_name: front-end-container
+    restart: always
+    build: ./frontend
+    depends_on:
+      - backend
+    links: 
+      - backend
+       
+  backend:
+    container_name: back-end-container
+    restart: always
+    build: ./backend
+    ports: 
+      - 8000:8000
+    environment:
+      - PRODUCTION=true
+    depends_on:
+      - mongo
+    volumes:
+      - ./.v/media:/media
+    links:
+      - mongo
+      
+  mongo:
+    container_name: mongo-container
+    image: mongo:4.0
+    volumes: 
+      - ./.v/db/data:/data/db

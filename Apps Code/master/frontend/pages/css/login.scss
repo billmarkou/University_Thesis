@@ -1,0 +1,27 @@
+@import "../../core//mixins/all.scss";
+
+.page_container {
+  position: absolute;
+  @include bounds-all(0); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeeee;
+}
+
+.header{
+  position: absolute;
+  transform: translateY(-100%);
+  left: 50%;
+  text-align: center;
+}
+
+.header_inner{
+  transform: translateX(-50%);
+  width: 600px;
+}
+
+.form{
+  position: relative;
+}
+

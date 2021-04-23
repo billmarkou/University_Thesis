@@ -1,0 +1,39 @@
+.contents {
+  box-shadow: 0 0 3px rgba(0,0,0, .16);
+  margin-top: 20px!important;
+  padding: 16px;
+}
+ 
+.title {
+  font-weight: bold;
+  font-size: 18px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+}
+
+.container {
+  display: flex;
+}
+
+.form_container {
+  flex: 1;
+}
+
+.cart {
+  width: 300px
+}
+
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form_field {
+  flex: 50%;
+  padding: 10px;
+}
+
+.submit_container {
+  padding-top: 20px;
+}

@@ -1,0 +1,21 @@
+.menu {
+  display: flex; 
+  width: 100%;
+  background-color: gray;
+  padding: 10px;
+}
+
+.menu_item { 
+  margin-right: 10px;
+}
+  
+.panel_left {
+  flex: 1;
+  display: flex; 
+  align-items: center; 
+}
+
+.panel_right {  
+  display: flex;
+  justify-content: flex-end; 
+}
